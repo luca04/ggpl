@@ -13,7 +13,7 @@ def buildingStruct(pillarSec, beamSec, pillarDist, beamDist):
 	(px,py) = pillarSec
 	(bx,bz) = beamSec
 
-#CREAZIONE DEI PILASTRI
+    #CREAZIONE DEI PILASTRI
 	pillarsX = []
 	for i in range(0, len(pillarDist)):
 		pillarsX.extend([py, -pillarDist[i]])
@@ -26,9 +26,7 @@ def buildingStruct(pillarSec, beamSec, pillarDist, beamDist):
 	pillarsBases = PROD([Q(px),QUOTE(pillarsX)])
 	pillars = PROD([pillarsBases, QUOTE(pillarsY)])
 
-	#CREAZIONE DELLE TRAVI
-
-
+    #CREAZIONE DELLE TRAVI
 
 	beamsX = []
 	for i in range(0, len(pillarDist)):
@@ -48,3 +46,4 @@ def buildingStruct(pillarSec, beamSec, pillarDist, beamDist):
 
 s = buildingStruct((0.5, 1.0), (0.5, 0.75), [1,0.5,2.0,5,1], [1, 3, 1.5, 0.5, 3])
 skeleton = COLOR(BLUE)(SKELETON(1)(s))
+VIEW(s)
