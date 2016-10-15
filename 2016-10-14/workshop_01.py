@@ -46,4 +46,3 @@ def buildingStruct(pillarSec, beamSec, pillarDist, beamDist):
 
 s = buildingStruct((0.5, 1.0), (0.5, 0.75), [1,0.5,2.0,5,1], [1, 3, 1.5, 0.5, 3])
 skeleton = COLOR(BLUE)(SKELETON(1)(s))
-VIEW(s)
