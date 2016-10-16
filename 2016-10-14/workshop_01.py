@@ -2,12 +2,12 @@ from larlib import *
 
 def buildingStruct(pillarSec, beamSec, pillarDist, beamDist):
 	"""
-    funzione buildingStruct: crea una struttura di colonne e travi il cui numero e' dato dalle lunghezze delle liste pillarDist e beamDist.
-    parametro beamSec: dimensione di una singola trave lungo asse x e z.
-    parametro pillarSec: dimensione di un singolo pilastro lungo asse x e y.
-    parametro pillarDist: lista di distanze tra i pilastri.
-    parametro beamDist: lista di distanze tra le travi.
-    La funzione ritorna un oggetto HPC
+    La funzione crea una struttura di colonne e travi il cui numero e' dato dalle lunghezze delle liste pillarDist e beamDist.
+    :param beamSec: dimensione di una singola trave lungo asse x e z.
+    :param pillarSec: dimensione di un singolo pilastro lungo asse x e y.
+    :param pillarDist: lista di distanze tra i pilastri.
+    :param beamDist: lista di distanze tra le travi.
+    :return: un oggetto HPC
     """
 
 	(px,py) = pillarSec
